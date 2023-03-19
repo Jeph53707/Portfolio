@@ -1,0 +1,16 @@
+.navBar {
+    margin: 0 5%;
+}
+
+.navMenu {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+}
+.navItem {
+    margin: 0 2%
+}
+.navLink {
+    text-decoration: none;
+    color: black;
+}

@@ -1,0 +1,128 @@
+.welcomePage {
+    display: flex;
+    margin: 0 2%;
+    height: 100vh;
+  
+
+   
+   
+    
+}
+.welcomeText {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+
+    
+}
+
+.welcomeTextAlt {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+
+    
+}
+
+.textAlt {
+    display: flex;
+    flex-flow: row wrap; 
+    justify-content: center; 
+    align-items: center;
+    width: 100%;
+    li {
+       font-size: 2.5rem;
+       margin: 0 2%;
+        
+    }
+}
+.aboutMe {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+    max-width: 100%;
+    padding-bottom: 5%;
+    margin: 0 8%;
+    
+}
+
+.aboutMeTitle {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding-bottom: 3%;
+    font-size: 1.6rem;
+    
+}
+
+.aboutMeContainer {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+    text-align: left;
+ 
+}
+.aboutMeImage {
+    border: 6px solid black;
+}
+
+.aboutMeText {
+    display: flex;
+    flex-flow: column wrap;
+    width: 50%;
+    font-size: 1.6rem;
+}
+
+.mySkills {
+    display: flex;
+    justify-content: center;
+    flex-flow: column wrap;
+    align-items: center;
+    margin: 0 2%;
+    
+}
+
+.skillTitle {
+    font-size: 1.6rem;
+    display: flex;
+    max-width: 100%
+}
+
+.skillList {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    text-align: center;
+    width: 50%;
+    font-size: 2rem;
+    li {
+        margin: 2%;
+    }
+}
+
+.myProjects {
+    margin: 0 2%;
+    justify-content: center;
+    h2 {
+        text-align: center;
+    }
+}
+
+.contactForm {
+    h2 {
+        width: 100%;
+        text-align: center;
+    }
+
+    .formContainer {
+        display: flex;
+        justify-content: center;
+        
+}
+}
