@@ -112,17 +112,20 @@
     h2 {
         text-align: center;
     }
+    
+    
 }
 
-.contactForm {
+.project2 {
+    display: flex;
+    justify-content: center;
+    width: 70%;
+}
+
+.formContainer {
+    display: flex;
+    flex-flow: column wrap;
     h2 {
         width: 100%;
-        text-align: center;
     }
-
-    .formContainer {
-        display: flex;
-        justify-content: center;
-        
-}
 }
