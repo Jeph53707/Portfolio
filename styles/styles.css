@@ -816,6 +816,9 @@ footer {
     width: 90%;
     margin-bottom: 2%;
   }
+  .myProjects .projectsContainer .project2Text {
+    width: 90%;
+  }
   .myProjects .projectsContainer .project1 {
     width: 90%;
     margin-bottom: 2%;
@@ -910,6 +913,36 @@ footer {
   }
   .skillList {
     width: 100%;
+  }
+  .myProjects .projectsContainer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column wrap;
+            flex-flow: column wrap;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .myProjects .projectsContainer .project2 {
+    width: 90%;
+    margin-bottom: 2%;
+  }
+  .myProjects .projectsContainer .project2Text {
+    width: 90%;
+  }
+  .myProjects .projectsContainer .project1 {
+    width: 90%;
+    margin-bottom: 2%;
+  }
+  .myProjects .projectsContainer .assignment1 {
+    width: 90%;
+    margin-bottom: 2%;
+  }
+  .myProjects .projectsContainer .project3 {
+    width: 90%;
   }
 }
 @media (max-width: 1060px) {

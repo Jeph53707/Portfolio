@@ -147,6 +147,9 @@
                 width: 90%;
                 margin-bottom: 2%;
             }
+            .project2Text {
+                width: 90%;
+            }
             .project1 {
                 width: 90%;
                 margin-bottom: 2%;
@@ -259,6 +262,35 @@
     }
     .skillList {
         width: 100%;
+    }
+
+
+    .myProjects {
+        
+        
+        .projectsContainer {
+            display: flex;
+            flex-flow: column wrap;
+            align-items: center;
+            .project2 {
+                width: 90%;
+                margin-bottom: 2%;
+            }
+            .project2Text {
+                width: 90%;
+            }
+            .project1 {
+                width: 90%;
+                margin-bottom: 2%;
+            }
+            .assignment1 {
+                width: 90%;
+                margin-bottom: 2%;
+            }
+            .project3 {
+                width: 90%;
+            }
+        }
     }
 }
 
