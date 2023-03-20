@@ -1,18 +1,22 @@
 .welcomePage {
     display: flex;
-    margin: 0 2%;
-    height: 100vh;
   
-
-   
+    height: 100vh;
+    background-image: url(../assets/portfoliobackground1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover
    
     
 }
 .welcomeText {
     display: flex;
-    justify-content: center;
+    justify-content: flex-end;
     align-items: center;
     width: 50%;
+    border-right: 3px solid rgb(223, 167, 100);
+    padding-right: 2%;
+
+
 
     
 }
@@ -21,23 +25,27 @@
     display: flex;
     flex-flow: column wrap;
     justify-content: center;
-    align-items: center;
     width: 50%;
+    border-left: 3px solid rgb(223, 167, 100);
+    padding-left: 2%;
+    p {
+        width: 35%;
+    }
 
     
 }
 
 .textAlt {
     display: flex;
-    flex-flow: row wrap; 
-    justify-content: center; 
-    align-items: center;
-    width: 100%;
+    justify-content: center;
+    width: 35%;
+    
     li {
        font-size: 2.5rem;
        margin: 0 2%;
         
     }
+   
 }
 .aboutMe {
     display: flex;
@@ -46,7 +54,10 @@
     flex-flow: row wrap;
     max-width: 100%;
     padding-bottom: 5%;
-    margin: 0 8%;
+    margin: 0;
+    background-image: url(../assets/portfoliobackground3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
     
 }
 
@@ -65,11 +76,17 @@
     align-items: center;
     justify-content: space-evenly;
     width: 100%;
+    margin: 0 8%;
     text-align: left;
+    
  
 }
 .aboutMeImage {
     border: 6px solid black;
+    border-radius: 30px;
+    img {
+        border-radius: 25px;
+    }
 }
 
 .aboutMeText {
@@ -84,7 +101,10 @@
     justify-content: center;
     flex-flow: column wrap;
     align-items: center;
-    margin: 0 2%;
+    // Will have an image here eventually, but this one just didn't look good;
+    // background-image: url(../assets/portfoliobackground5.jpg);
+    // background-repeat: no-repeat;
+    // background-size: cover;
     
 }
 
@@ -112,6 +132,9 @@
     flex-flow: column wrap;
     text-align: center;
     padding-bottom: 6%;
+    background-image: url(../assets/portfoliobackground3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
     .projectsTitle {
         font-size: 1.6rem;
         padding-bottom: 3%;
@@ -136,6 +159,23 @@
             box-shadow: 10px 10px 30px teal;
            
         }
+
+        .assignment1 {
+            display: flex;
+            justify-content: center;
+            width: 45%;
+            margin-top: 2%;
+            box-shadow: 10px 10px 30px teal;
+
+        }
+        .project3 {
+            display: flex;
+            justify-content: center;
+            width: 45%;
+            margin-top: 2%;
+            box-shadow: 10px 10px 30px red;
+            
+        }
     }
 }
 
@@ -154,11 +194,13 @@
         display: flex;
         flex-flow: row wrap;
         width: 100%;
-        
+        form {
+            width: 40%;
+        }
       
         .formInfo {
             display: flex;
-            width: 50%;
+            // width: 50%;
             flex-flow: column wrap;
 
             
