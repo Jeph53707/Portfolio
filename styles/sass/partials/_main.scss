@@ -107,25 +107,70 @@
 }
 
 .myProjects {
-    margin: 0 2%;
+    display: flex;
     justify-content: center;
-    h2 {
+    flex-flow: column wrap;
+    text-align: center;
+    padding-bottom: 6%;
+    .projectsTitle {
+        font-size: 1.6rem;
+        padding-bottom: 3%;
+    }
+    .projectsContainer {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-evenly;
+      
+        .project2 {
+            display: flex;
+            justify-content: center;
+            width: 45%;
+            box-shadow: 10px 10px 30px teal;
+            
+        }
+        
+        .project1 {
+            display: flex;
+            justify-content: center;
+            width: 45%;
+            box-shadow: 10px 10px 30px teal;
+           
+        }
+    }
+}
+
+
+
+
+.contactForm {
+    width: 100%;
+    padding-bottom: 6%;
+    text-align: left;
+    .formTitle {
+        font-size: 1.6rem;
         text-align: center;
     }
-    
-    
-}
-
-.project2 {
-    display: flex;
-    justify-content: center;
-    width: 70%;
-}
-
-.formContainer {
-    display: flex;
-    flex-flow: column wrap;
-    h2 {
+    .formContainer {
+        display: flex;
+        flex-flow: row wrap;
         width: 100%;
+        
+      
+        .formInfo {
+            display: flex;
+            width: 50%;
+            flex-flow: column wrap;
+
+            
+        }
+   
+    
+        .formMessage {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 50%;
+            
+        }
     }
 }

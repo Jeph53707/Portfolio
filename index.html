@@ -13,16 +13,16 @@
         <nav class="navBar">
             <ul class="navMenu">
                 <li class="navItem">
-                    <a href="#" class="navLink">Home</a>
+                    <a href="./index.html" class="navLink">| Home |</a>
                 </li>
                 <li class="navItem">
-                    <a href="#" class="navLink">About</a>
+                    <a href="#aboutMe" class="navLink">| About |</a>
                 </li>
                 <li class="navItem">
-                    <a href="#" class="navLink">Projects</a>
+                    <a href="#myProjects" class="navLink">| Projects |</a>
                 </li>
                 <li class="navItem">
-                    <a href="#" class="navLink">Contact</a>
+                    <a href="#contactForm" class="navLink">| Contact |</a>
                 </li>
             </ul>
             <div class="hamburgerMenu">
@@ -51,14 +51,14 @@
                   
                     
                 </ul>
-                <p>A multidisciplinary Web Developer based in Toronto, who is currently attending Juno College.</p>
+                <p>A multidisciplinary Web Developer based in Toronto with 3 months of relevant experience</p>
             </div>
             
 
             </div>
        </section>
       
-       <section class="aboutMe">
+       <section class="aboutMe" id="aboutMe">
             <div class="aboutMeTitle">
                 <h2>About Me</h2>
             </div>
@@ -70,16 +70,19 @@
 
                 <div class="aboutMeText">
                     <p>Greetings! My name is Jeff (I hope you got the reference). I'm a Front End Developer based in Toronto. I enjoy designing creative, accessible, and user-friendly websites. </p>
+                    <p>Prior to becoming a Front-End Developer, I was a Recruiter for IntelliPro Group Inc, a staffing agency headquarted in the United States that specialized in Technical (Permanent and Contract) Recruitment.</p>
                     <p>Outside of coding, I enjoy exploring restaurants (I know the BEST diners), and playing RimWorld.</p>
                     
-                    <p>Thank you for taking your time to have a look at my portfolio! I look forward to working with you </p>
                 </div>
             </div>
             
        </section>
 
        <section class="mySkills">
-            <h2 class="skillTitle">Technical Skillset</h2>
+            <div class="skillTitle">
+                <h2>Technical Skillset</h2>
+            </div>
+            
             <ul class="skillList">
                 <li><i class="fa-brands fa-html5"></i><p>HTML5</p></li>
                
@@ -97,33 +100,52 @@
             
        </section>
 
-       <section class="myProjects">
-            <h2>Projects</h2>
-            <div class="project2">
-                <figure>
-                    <img src="./assets/Project2.JPG">
-                </figure>
-                <div class="hoverProjectOverlay">
-                    <h3>Random Quiz Game</h3>
-                    <p>An online random quiz game made in collaboration with Solivan Lau and Derek Ngan. Users are given 45 seconds to answer as many randomized questions as possible. A timer and score display help the user keep track of the time they have left and points.</p>
+       <section class="myProjects" id="myProjects">
+            <div class="projectsTitle">
+                <h2>Projects</h2>
+            </div>
+            <div class="projectsContainer">
+                <div class="project2">
+                    <figure>
+                        <img src="./assets/Project2.JPG">
+                    </figure>
+                    <div class="hoverProjectOverlay">
+                        <!-- <h3>Random Quiz Game</h3>
+                        <p>An online random quiz game made in collaboration with Solivan Lau and Derek Ngan. Users are given 45 seconds to answer as many randomized questions as possible. A timer and score display help the user keep track of the time they have left and points.</p> -->
+                    </div>
+                </div>
+                <div class="project1">
+                    <figure>
+                        <img src="./assets/Project1.JPG">
+                    </figure>
+                    <div class="hoverProjectOverlay">
+                        <h3></h3>
+                        <p></p>
+                    </div>
                 </div>
             </div>
-            <div class="project1">
-
-            </div>
-           
+            
+        
        </section>
 
        <section class="contactForm" id="contactForm">
+            <div class="formTitle">
+                <h2>Let's Talk!</h2>
+            </div>
+            
             <div class="formContainer">
-                <h2>Contact Me</h2>
+                <div class="formMessage">Thank you for taking your time to have a look at my portfolio! I look forward to working with you </div>
                 <form method="POST">
-                    <label class="sr-only"for="yourName">Enter your name</label>
-                    <input type="text" id="yourName" placeholder="Your Name">
-                    <label class="sr-only" for="yourEmail">Enter your email</label>
-                    <input type="text" id="yourEmail" placeholder="Your Email">
-                    <textarea name="yourMessage" id="yourMessage" placeholder="Your Message" required></textarea>
+                    <div class="formInfo">
+                        <label class="sr-only"for="yourName">Enter your name</label>
+                        <input type="text" id="yourName" placeholder="Your Name">
+                        <label class="sr-only" for="yourEmail">Enter your email</label>
+                        <input type="text" id="yourEmail" placeholder="Your Email">
+                        <textarea name="yourMessage" id="yourMessage" placeholder="Your Message" required></textarea>
+                
+                    <button type="submit">Send</button>
                 </form>
+                
             </div>
        </section>
 

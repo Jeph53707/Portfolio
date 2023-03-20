@@ -453,26 +453,98 @@ hr {
 }
 
 .myProjects {
-  margin: 0 2%;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-.myProjects h2 {
-  text-align: center;
-}
-
-.contactForm h2 {
-  width: 100%;
-  text-align: center;
-}
-.contactForm .formContainer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column wrap;
+          flex-flow: column wrap;
+  text-align: center;
+  padding-bottom: 6%;
+}
+.myProjects .projectsTitle {
+  font-size: 1.6rem;
+  padding-bottom: 3%;
+}
+.myProjects .projectsContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+.myProjects .projectsContainer .project2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 45%;
+  -webkit-box-shadow: 10px 10px 30px teal;
+          box-shadow: 10px 10px 30px teal;
+}
+.myProjects .projectsContainer .project1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 45%;
+  -webkit-box-shadow: 10px 10px 30px teal;
+          box-shadow: 10px 10px 30px teal;
+}
+
+.contactForm {
+  width: 100%;
+  padding-bottom: 6%;
+  text-align: left;
+}
+.contactForm .formTitle {
+  font-size: 1.6rem;
+  text-align: center;
+}
+.contactForm .formContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  width: 100%;
+}
+.contactForm .formContainer .formInfo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 50%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column wrap;
+          flex-flow: column wrap;
+}
+.contactForm .formContainer .formMessage {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 50%;
 }
 
 footer {
@@ -482,5 +554,4 @@ footer {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin: 0 2%;
 }
