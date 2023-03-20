@@ -2,6 +2,9 @@ html {
     background-color: #F5F5F5;
 }
 
+*{
+    box-sizing: border-box;
+}
 img {
     display: block;
     width: 100%;
@@ -17,7 +20,7 @@ body {
 }
 
 header {
-    background: grey;
+    background-color: black;
     margin: 0 auto;
 }
 

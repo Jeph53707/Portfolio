@@ -15,10 +15,6 @@
     width: 50%;
     border-right: 3px solid rgb(223, 167, 100);
     padding-right: 2%;
-
-
-
-    
 }
 
 .welcomeTextAlt {
@@ -142,14 +138,38 @@
     .projectsContainer {
         display: flex;
         flex-flow: row wrap;
-        justify-content: space-evenly;
+        justify-content: center;
       
         .project2 {
             display: flex;
             justify-content: center;
             width: 45%;
             box-shadow: 10px 10px 30px teal;
+            position: relative;
+            flex-flow: column wrap;
+    
             
+        }
+        .project2Text {
+            width: 45%;
+            display:flex;
+            align-items: center;
+        }
+
+        // .project2.hoverProjectOverlay {
+        //   position: absolute;
+        //   transform: scale(0);
+        //   background-color: orange;
+        //   transition: opacity 0.6s ease-in-out;
+        //   top:0;
+        //   left:0;
+        //   height: 100%;
+          
+        // }
+        .project1Text {
+            width: 45%;
+            display: flex;
+            align-items: center; 
         }
         
         .project1 {
@@ -157,6 +177,8 @@
             justify-content: center;
             width: 45%;
             box-shadow: 10px 10px 30px teal;
+            margin-top: 2%;
+            
            
         }
 
@@ -167,15 +189,33 @@
             margin-top: 2%;
             box-shadow: 10px 10px 30px teal;
 
+
         }
-        .project3 {
-            display: flex;
-            justify-content: center;
+
+        .assignment1Text {
             width: 45%;
-            margin-top: 2%;
-            box-shadow: 10px 10px 30px red;
-            
+            display: flex;
+            align-items: center;
+            text-align: center;
+
         }
+   
+
+       
+        // .project3 {
+        //     display: flex;
+        //     justify-content: center;
+        //     width: 45%;
+        //     margin-top: 2%;
+        //     box-shadow: 10px 10px 30px red;
+            
+        // }
+        // .project3Text{
+        //     width: 45%;
+        //     display: flex;
+        //     align-items: center;
+        // }
+       
     }
 }
 
@@ -195,12 +235,12 @@
         flex-flow: row wrap;
         width: 100%;
         form {
-            width: 40%;
+            width: 50%;
         }
       
         .formInfo {
             display: flex;
-            // width: 50%;
+            width: 100%;
             flex-flow: column wrap;
 
             

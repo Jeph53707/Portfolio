@@ -1,0 +1,302 @@
+@media (max-width: 321px) {
+
+    .welcomePage {
+        font-size: .5rem;
+        display: flex; 
+        flex-flow: column wrap;
+        align-items: center;
+        justify-content: center;
+        background-position: center center;
+    
+
+        .welcomeText {
+            h1 {
+                font-size: 1.5rem;
+            }
+        }
+        .welcomeTextAlt {
+            
+            .textAlt {
+                width: 100%;
+                font-size: .5rem;
+                .li {
+                    font-size: .5rem;
+                    margin: 0 2%;
+                    
+                }
+            }
+            p {
+                width: 100%;
+                margin: 0;
+                font-size: 1rem;
+            }
+        }
+    }
+  
+    .aboutMe {
+        background-position: center center;
+    
+        .aboutMeText {
+            width: 100%;
+            p {
+                font-size: 1rem;
+                
+            }
+        }
+    }
+    .skillList {
+        width: 100%;
+    }
+
+    .myProjects {
+        
+        
+        .projectsContainer {
+            display: flex;
+            flex-flow: column wrap;
+            align-items: center;
+            .project2 {
+                width: 90%;
+                margin-bottom: 2%;
+            }
+            .project2Text {
+                width: 90%;
+            }
+            .project1 {
+                width: 90%;
+                margin-bottom: 2%;
+            }
+            .assignment1 {
+                width: 90%;
+                margin-bottom: 2%;
+            }
+            .project3 {
+                width: 90%;
+            }
+        }
+    }
+    .contactForm {
+        .formContainer {
+            display: flex;
+            align-items: center;
+            flex-flow: column wrap;
+            justify-content: center;
+            .formMessage {
+                width: 90%;
+                padding-bottom: 5%;
+            }
+            .formInfo {
+                width: 100%;
+            }
+            form {
+                width: 95%;
+            }
+        }
+
+    }
+
+}
+
+@media (max-width: 480px) {
+    .welcomeText {
+        h1 {
+            font-size: 1.5rem;
+        }
+    }
+    .welcomeTextAlt {
+        
+        .textAlt {
+            width: 100%;
+            font-size: .5rem;
+            .li {
+                font-size: .5rem;
+                margin: 0 2%;
+                
+            }
+        }
+        p {
+            width: 100%;
+            margin: 0;
+            font-size: 1rem;
+        }
+    }
+
+    .aboutMe {
+        background-position: center center;
+    
+        .aboutMeText {
+            width: 100%;
+            p {
+                font-size: 1rem;
+                
+            }
+        }
+    }
+    .skillList {
+        width: 100%;
+    }
+
+    .myProjects {
+        
+        
+        .projectsContainer {
+            display: flex;
+            flex-flow: column wrap;
+            align-items: center;
+            .project2 {
+                width: 90%;
+                margin-bottom: 2%;
+            }
+            .project1 {
+                width: 90%;
+                margin-bottom: 2%;
+            }
+            .assignment1 {
+                width: 90%;
+                margin-bottom: 2%;
+            }
+            .project3 {
+                width: 90%;
+            }
+        }
+    }
+    .contactForm {
+        .formContainer {
+            display: flex;
+            align-items: center;
+            flex-flow: column wrap;
+            justify-content: center;
+            .formMessage {
+                width: 90%;
+                padding-bottom: 5%;
+            }
+            .formInfo {
+                width: 100%;
+            }
+            form {
+                width: 95%;
+            }
+        }
+
+    }
+}
+
+
+
+@media (max-width: 720px) {
+    .hamburgerMenu {
+        display: block;
+    }
+  
+    .hamburgerMenu.active.threeBars:nth-child(2){
+        opacity: 0;
+    }
+
+    .hamburgerMenu.active.threeBars:nth-child(1) {
+        transform: translateY(15px) rotate (45deg);
+    }
+
+    .hamburgerMenu.active.threeBars:nth-child(3) {
+        transform: translateY(-15px) rotate (-45deg)
+    }
+
+    .navBar {
+        position: fixed;
+        width: 100%;
+        
+        transition: 0.5s;
+        
+    }
+  
+
+    .navMenu {
+        
+        width: 100%;
+        text-align: center;
+        transition: 0.5s;
+    }
+    .welcomePage {
+        font-size: 1rem;
+        display: flex; 
+        flex-flow: column wrap;
+        align-items: center;
+        justify-content: center;
+        background-position: center center;
+    }
+    .welcomeText {
+        h1 {
+            font-size: 1.5rem;
+        }
+    }
+    .welcomeTextAlt {
+        
+        .textAlt {
+            width: 100%;
+            font-size: .5rem;
+            .li {
+                font-size: .5rem;
+                margin: 0 2%;
+                
+            }
+        }
+        p {
+            width: 100%;
+            margin: 0;
+            font-size: 1rem;
+        }
+    }
+    .aboutMe {
+        background-position: center center;
+    
+        .aboutMeText {
+            width: 100%;
+            p {
+                font-size: 1rem;
+                
+            }
+        }
+    }
+    .skillList {
+        width: 100%;
+    }
+}
+
+@media (max-width: 1060px) {
+    
+    .welcomePage {
+        font-size: 1rem;
+        display: flex; 
+        flex-flow: column wrap;
+        align-items: center;
+        justify-content: center;
+        background-position: center center;
+    }
+    .welcomeTextAlt {
+        .textAlt {
+            width: 100%;
+            .li {
+            font-size: 1rem;
+            margin: 0 2%;
+            
+            }
+        }
+        p {
+            width: 100%;
+        }
+    }
+
+    .aboutMe {
+        background-position: center center;
+    
+        .aboutMeText {
+            width: 100%;
+            p {
+                font-size: 1rem;
+                
+            }
+        }
+    }
+    .skillList {
+        width: 100%;
+    }
+}

@@ -1,21 +1,27 @@
 
 
 .navBar {
-    margin: 0 5%;
+    margin: 0%;
+    background: black;
+    display: flex;
+    min-height: 50px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 5%;
+    width: 100%;
+    
+    
     
 }
 
 .navMenu {
     display: flex;
-    min-height: 50px;
-    flex-flow: row wrap;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: center;
-    margin: 0 auto;
+    gap: 60px;
+
 }
-.navItem {
-    gap: 2%;
-}
+
 .navLink {
     text-decoration: none;
     color: white;
@@ -26,14 +32,22 @@
     color: skyblue
 }
 
-.hamburger {
+.hamburgerMenu {
+    display: none;
     cursor: pointer;
+   
+    .threeBars {
+        display: block;
+        width: 30px;
+        height: 10px;
+        margin: 10% 0;
+        -webkit-transition: all 0.3s ease-in-out;
+        transition: all 0.3s ease-in-out;
+        background-color: white;
+        
+    }
+    
+
 }
 
-.threeBars {
-    display: black;
-    -webkit-transition: all 0.3s ease-in-out;
-    transition: all 0.3s ease-in-out;
-    background-color: white;
-}
 
