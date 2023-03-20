@@ -184,21 +184,22 @@
 
 
 @media (max-width: 720px) {
-    .hamburgerMenu {
-        display: block;
-    }
+    //Will attempt need to fix this
+    // .hamburgerMenu {
+    //     display: block;
+    // }
   
-    .hamburgerMenu.active.threeBars:nth-child(2){
-        opacity: 0;
-    }
+    // .hamburgerMenu.active.threeBars:nth-child(2){
+    //     opacity: 0;
+    // }
 
-    .hamburgerMenu.active.threeBars:nth-child(1) {
-        transform: translateY(15px) rotate (45deg);
-    }
+    // .hamburgerMenu.active.threeBars:nth-child(1) {
+    //     transform: translateY(15px) rotate (45deg);
+    // }
 
-    .hamburgerMenu.active.threeBars:nth-child(3) {
-        transform: translateY(-15px) rotate (-45deg)
-    }
+    // .hamburgerMenu.active.threeBars:nth-child(3) {
+    //     transform: translateY(-15px) rotate (-45deg)
+    // }
 
     .navBar {
         position: fixed;

@@ -273,6 +273,11 @@ html {
   font-size: 18px;
 }
 
+a {
+  text-decoration: none;
+  color: greenyellow;
+}
+
 .navBar {
   margin: 0%;
   background: black;
@@ -326,6 +331,10 @@ html {
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
   background-color: white;
+}
+
+.navBar {
+  position: fixed;
 }
 
 .welcomePage {
@@ -845,20 +854,6 @@ footer {
   }
 }
 @media (max-width: 720px) {
-  .hamburgerMenu {
-    display: block;
-  }
-  .hamburgerMenu.active.threeBars:nth-child(2) {
-    opacity: 0;
-  }
-  .hamburgerMenu.active.threeBars:nth-child(1) {
-    -webkit-transform: translateY(15px) rotate 45deg;
-            transform: translateY(15px) rotate 45deg;
-  }
-  .hamburgerMenu.active.threeBars:nth-child(3) {
-    -webkit-transform: translateY(-15px) rotate -45deg;
-            transform: translateY(-15px) rotate -45deg;
-  }
   .navBar {
     position: fixed;
     width: 100%;
