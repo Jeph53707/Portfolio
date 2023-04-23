@@ -1,11 +1,12 @@
 .navBar {
     position: fixed;
+    z-index: 9999;
 }
 
 .welcomePage {
     display: flex;
     height: 100vh;
-    background-image: url(../assets/portfoliobackground1.jpg);
+   
     background-repeat: no-repeat;
     background-size: cover
    
@@ -54,7 +55,7 @@
     max-width: 100%;
     padding-bottom: 5%;
     margin: 0;
-    background-image: url(../assets/portfoliobackground3.jpg);
+  
     background-repeat: no-repeat;
     background-size: cover;
     
@@ -75,16 +76,17 @@
     align-items: center;
     justify-content: space-evenly;
     width: 100%;
-    margin: 0 8%;
+    margin: 0 10%;
     text-align: left;
     
  
 }
 .aboutMeImage {
-    border: 6px solid black;
-    border-radius: 30px;
+
     img {
+        border: 6px solid black;
         border-radius: 25px;
+        width: 90%;
     }
 }
 
@@ -104,14 +106,17 @@
     // background-image: url(../assets/portfoliobackground5.jpg);
     // background-repeat: no-repeat;
     // background-size: cover;
-    
+    .skillTitle {
+        font-size: 1.6rem;
+        display: flex;
+        max-width: 100%;
+        h2 span {
+            border-bottom: 4px solid skyblue;
+        }
+    }
 }
 
-.skillTitle {
-    font-size: 1.6rem;
-    display: flex;
-    max-width: 100%
-}
+
 
 .skillList {
     display: flex;
@@ -131,131 +136,190 @@
     flex-flow: column wrap;
     text-align: center;
     padding-bottom: 6%;
-    background-image: url(../assets/portfoliobackground3.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     .projectsTitle {
         font-size: 1.6rem;
         padding-bottom: 3%;
+        h2 span {
+            border-bottom: 4px solid skyblue;
+        }
     }
     .projectsContainer {
         display: flex;
         flex-flow: row wrap;
         justify-content: center;
-      
-        .project2 {
-            display: flex;
-            justify-content: center;
-            width: 45%;
-            box-shadow: 10px 10px 30px teal;
-            position: relative;
-            flex-flow: column wrap;
-    
-            
-        }
-        .project2Text {
-            width: 45%;
-            display:flex;
-            align-items: center;
-        }
-
-        // .project2.hoverProjectOverlay {
-        //   position: absolute;
-        //   transform: scale(0);
-        //   background-color: orange;
-        //   transition: opacity 0.6s ease-in-out;
-        //   top:0;
-        //   left:0;
-        //   height: 100%;
-          
-        // }
-        .project1Text {
-            width: 45%;
-            display: flex;
-            align-items: center; 
-        }
-        
-        .project1 {
-            display: flex;
-            justify-content: center;
-            width: 45%;
-            box-shadow: 10px 10px 30px teal;
-            margin-top: 2%;
-            
-           
-        }
-
-        .assignment1 {
-            display: flex;
-            justify-content: center;
-            width: 45%;
-            margin-top: 2%;
-            box-shadow: 10px 10px 30px teal;
-
-
-        }
-
-        .assignment1Text {
-            width: 45%;
-            display: flex;
-            align-items: center;
-            text-align: center;
-
-        }
-   
-
-        //Will add this section once React Project is completed
-        // .project3 {
-        //     display: flex;
-        //     justify-content: center;
-        //     width: 45%;
-        //     margin-top: 2%;
-        //     box-shadow: 10px 10px 30px red;
-            
-        // }
-        // .project3Text{
-        //     width: 45%;
-        //     display: flex;
-        //     align-items: center;
-        // }
+        margin: 0% 10%;
        
     }
 }
 
+.overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: black;
+    opacity: 0.75; 
+    overflow: hidden;
+    width: 100%;
+    height: 0;
+    transition: .5s ease; 
+    h3 {
+        width: 100%;
+        margin-top: 5%;
+        color: white; 
+        font-size: 20px
+
+    }
+    p {
+        width: 100%;
+        margin-top: 5%;
+        color: white;
+        font-size: 18px;
+    }
+}
+
+.project3Container {
+    display: flex;
+    width: 100%;
+    padding-bottom: 5%;
+    .project3React:hover .overlay {
+        height: 100%; 
+
+    }
+    .project3React {
+        display: flex;
+        width: 50%;
+        position: relative; 
+    }
+    .project3Text {
+        display: flex;
+        width: 50%;
+        justify-content: center;
+        flex-flow: column wrap;
+        align-items: center;
+        text-align: center;
+    }
+}
+
+.project2Container {
+    display: flex;
+    flex-flow: row-reverse wrap;
+    width: 100%;
+    padding-bottom: 5%;
+    .project2:hover .overlay {
+        height: 100%; 
+
+    }
+    .project2 {
+        display: flex;
+        width: 50%;
+        position: relative;
+    }
+    .project2Text {
+        display: flex;
+        width: 50%;
+        justify-content: center;
+        flex-flow: column wrap;
+        align-items: center;
+        text-align: center;
+    }
+}
+
+.project1Container {
+    display: flex;
+    width: 100%;
+    padding-bottom: 5%;
+    .project1:hover .overlay {
+        height: 100%; 
+    }
+  
+    .project1 {
+        display: flex;
+        width: 50%;
+        position: relative;
+    }
+    .project1Text {
+        display: flex;
+        width: 50%;
+        justify-content: center;
+        flex-flow: column wrap;
+        align-items: center;
+        text-align: center;
+    }
+}
+
+.assignment1Container {
+    display: flex;
+    flex-flow: row-reverse wrap;
+    
+    width: 100%;
+    padding-bottom: 5%;
+    .assignment1:hover .overlay {
+        height: 100%; 
+    }
+    
+    .assignment1 {
+        display: flex;
+        width: 50%;
+        position: relative
+    }
+    .assignment1Text {
+        display: flex;
+        width: 50%;
+        justify-content: center;
+        flex-flow: column wrap;
+        align-items: center;
+        text-align: center;
+    }
+}
 
 
-
-.contactForm {
+.contactMe {
+    display: flex;
+    flex-flow: row wrap;
     width: 100%;
     padding-bottom: 6%;
-    text-align: left;
+    .formWrapper {
+        margin: 0% 18%;
+    }
     .formTitle {
         font-size: 1.6rem;
         text-align: center;
-    }
-    .formContainer {
-        display: flex;
-        flex-flow: row wrap;
         width: 100%;
-        form {
-            width: 50%;
+        h2 span {
+            border-bottom: 4px solid skyblue;
         }
-      
-        .formInfo {
+    }
+    .contactFormContainer {
+        display: flex;
+        width: 100%;
+       .contactFormText {
+        width: 50%;
+        text-align: left;
+       }
+       .contactForm {
+        display: flex;
+        width: 50%;
+        margin-left: 5%;
+        justify-content: center;
+            input {
+                margin-bottom: 5%;
+            }
+            textarea {
+                margin-bottom: 5%;
+                resize: none;
+                border-radius: 6px;
+                width: 100%;
+                height: 10rem;
+            }
+       }
+        .contactFormInput {
             display: flex;
             width: 100%;
             flex-flow: column wrap;
-
-            
+        
         }
-   
-    
-        .formMessage {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            width: 50%;
-            
-        }
-    }
+    } 
 }

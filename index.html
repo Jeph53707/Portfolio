@@ -9,6 +9,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lora&family=Raleway:wght@700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Schibsted+Grotesk:wght@800&display=swap" rel="stylesheet">
     <title>Jeff's Portfolio</title>
 </head>
 <body>
@@ -16,7 +19,7 @@
         <nav class="navBar">
             <ul class="navMenu">
                 <li class="navItem">
-                    <a href="./index.html" class="navLink">| Home |</a>
+                    <a href="#home" class="navLink">| Home |</a>
                 </li>
                 <li class="navItem">
                     <a href="#aboutMe" class="navLink">| About |</a>
@@ -37,7 +40,7 @@
     
     </header>
     <main>
-       <section class="welcomePage">
+       <section class="welcomePage" id="home">
             <div class="welcomeText">
                 <h1>
                     <span>Jeff Chen</span>
@@ -89,7 +92,7 @@
 
        <section class="mySkills">
             <div class="skillTitle">
-                <h2>Technical Skillset</h2>
+                <h2><span>Tech Stack</span></h2>
             </div>
             
             <ul class="skillList">
@@ -111,92 +114,132 @@
 
        <section class="myProjects" id="myProjects">
             <div class="projectsTitle">
-                <h2>Projects</h2>
+                <h2><span>Projects</span>
             </div>
             <div class="projectsContainer">
-                <div class="project2">
-                    <figure>
-                        <img src="./assets/Project2.JPG" alt="screenshot of JavaScript Project 2">
-                    </figure>
-             
-                    <!-- Attempted to create a hover style, but it failed | Will revisit this later -->
-                    <!-- <div class="hoverProjectOverlay">
-                        <h3>Random Quiz Game</h3>
-                        <p>An online random quiz game made in collaboration with Solivan Lau and Derek Ngan. Users are given 45 seconds to answer as many randomized questions as possible. A timer and score display help the user keep track of the time they have left and points.</p>
-                    </div> -->
+                <div class="project4Container">
+                    <div class="project4React">
+                        <figure>
+                            <img src="">
+                        </figure>
+
+                    </div>
+                    <div class="project4Text">
+                        
+                    </div>
                 </div>
-                <div class="project2Text">
-                    <span><p><strong>An online random quiz game made in collaboration with Solivan Lau and Derek Ngan. Users are given 45 seconds to answer as many randomized questions as possible. A timer and score display help the user keep track of the time they have left and points. </strong>
-                        <br>
-                        <br>
-                    <a href="https://github.com/DerekNgan/Project-2">Github | </a>
-                    <a href="https://curious-cascaron-6f8211.netlify.app">Live</a>
+                <div class="project3Container">
+                    <div class="project3React">
+                        <figure>
+                            <img src="./assets/project3react.JPG" alt="screenshot of React Project 3">
+                        </figure>
+                        <div class="overlay">
+                            <h3>Artist & Artwork (AA) Finder</h3>
+                            <p>
+                                A React project that accesses the Rijksmuseum API in order to create a list of Artworks based on the selected Artist in the Form. Artists were hardcoded. Solo 
+                            </p>
+                        </div>
+                    </div>
                     
-                    </p></span>
-                    
+                    <div class="project3Text">
+                        <h3>Artist & Artwork Finder</h3>
+                        <span><p><strong>
+                            A React project that accesses the Rijksmuseum API in order to create a list of Artworks based on the selected Artist in the Form. Artists were hardcoded. Solo
+                        </strong></p></span>
+
+                    </div>
+                </div>
+                <div class="project2Container">
+                    <div class="project2">
+                        <figure>
+                            <img src="./assets/Project2.JPG" alt="screenshot of JavaScript Project 2">
+                        </figure>
+                        <div class="overlay">
+                            <h3>Sample Text</h3>
+                        </div>
+                    </div>
+                    <div class="project2Text">
+                        <h3>Random Quiz Game!</h3>
+                        <span><p><strong>
+                            An online random quiz game where users are given 45 seconds to answer as many randomized questions as possible. Score and time left is displayed. Collaboration with Solivan Laub and Derek Ngan  </strong>
+                           
+                        <!-- <a href="https://github.com/DerekNgan/Project-2">Github | </a>
+                        <a href="https://curious-cascaron-6f8211.netlify.app">Live</a> -->
+                        
+                        </p></span>
+                    </div>
 
                 </div>
-           
-                <div class="project1">
-                    <figure>
-                        <img src="./assets/Project1.JPG" alt="screenshot of the index of a multipage PSD conversion">
-                    </figure>
-           
-                </div>
-                <div class="project1Text">
-                    <span><p><strong>A Multi-page PSD conversion via HTML5, SASS, and CSS3. Solo</strong><br><br>
-                    <a href="https://github.com/Jeph53707/project-1-cohort-48-delicious">Github | </a>
-                    <a href="https://jeffdevproject1.netlify.app">Live</a>
-                    
-                    </p></span>
-                </div>
-             
-                <div class="assignment1">
-                    <figure>
-                        <img src="./assets/Bikerland.png" alt="screenshot of the index of a single page PSD conversion">
-                    </figure>
-                </div>
-                <div class="assignment1Text">
-                    <span><p><strong>A single page PSD conversion with HTML5 and CSS3. Solo </strong><br><br>
-                    <p><a href="https://github.com/Jeph53707/assignmentone-jeffchen">Github</a></p></span>
-                </div>
-
+               
+                <div class="project1Container">
+                    <div class="project1">
+                        <figure>
+                            <img src="./assets/Project1.JPG" alt="screenshot of the index of a multipage PSD conversion">
+                        </figure>
+                        <div class="overlay">
+                            <h3>Sample Text</h3>
+                        </div>
+               
+                    </div>
+                    <div class="project1Text">
+                        <h3>Delicious!!!</h3>
+                        <span><p><strong>
+                            A Multi-page PSD conversion via HTML5, SASS, and CSS3. Solo</strong>
+                        <!-- <a href="https://github.com/Jeph53707/project-1-cohort-48-delicious">Github | </a>
+                        <a href="https://jeffdevproject1.netlify.app">Live</a> -->
+                        
+                        </p></span>
+                    </div>
 
                 </div>
+                
+                <div class="assignment1Container">
+                    <div class="assignment1">
+                        <figure>
+                            <img src="./assets/Bikerland.png" alt="screenshot of the index of a single page PSD conversion">
+                        </figure>
+                        <div class="overlay">
+                            <h3>Bikerland</h3>
+                            <p>A multi-page responsive PSD conversion.</p>
+                        </div>
+                    </div>
+                    <div class="assignment1Text">
+                        <h3>Bikerland</h3>
+                        <span><p><strong>
+                            A single page PSD conversion with HTML5, SASS, and CSS3. Solo </strong>
+                        <!-- <a href="https://github.com/Jeph53707/assignmentone-jeffchen">Github |</a></p></span> -->
+                    </div>
+                </div>
+                
+
+
                 <!-- Styles break when put in | Will need to debug -->
-                <!-- <div class="project3">
-                    <figure>
-                        <img src="./assets/underconstruction2.jpg">
-                    </figure>
-                </div>
-                <div class="project3Text">
-                    <p>An Upcoming Solo React Project</p>
-                </div> -->
 
             </div>
             
         
        </section>
 
-       <section class="contactForm" id="contactForm">
+       <section class="contactMe" id="contactMe">
             <div class="formTitle">
-                <h2>Let's Talk!</h2>
+                <h2><span>Let's Talk!</span></h2>
             </div>
-            
-            <div class="formContainer">
-                <div class="formMessage">Thank you for taking your time to have a look at my portfolio! I look forward to working with you. Feel free to check out my repository, connect with me on Linkedin, and or shoot me a message! </div>
+            <div class="contactFormContainer formWrapper">
+                <div class="contactFormText">
+                    Thank you for taking your time to have a look at my portfolio! I look forward to working with you. Feel free to check out my repository, connect with me on Linkedin, and or shoot me a message!
+                </div>
                 
-                <form method="POST">
-                    <div class="formInfo">
+                <form action="https://formspree.io/f/meqwpgvy" method="POST" class="contactForm" name="contactForm">
+                    <div class="contactFormInput">
                         <label class="sr-only"for="yourName">Enter your name</label>
-                        <input type="text" id="yourName" placeholder="Your Name">
+                        <input type="text" name="yourName" id="yourName" placeholder="Your Name" required>
                         <label class="sr-only" for="yourEmail">Enter your email</label>
-                        <input type="text" id="yourEmail" placeholder="Your Email">
+                        <input type="text" name=yourEmail id="yourEmail" placeholder="Your Email" required>
                         <textarea name="yourMessage" id="yourMessage" placeholder="Your Message" required></textarea>
-                
-                    <button type="submit">Send</button>
+                        <button type="submit">Get In Touch</button>
+                    </div>
                 </form>
-                
+    
             </div>
        </section>
 
