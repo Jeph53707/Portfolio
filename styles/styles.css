@@ -275,7 +275,6 @@ h1, h2, h3, h4, h5, h6 {
 
 a {
   text-decoration: none;
-  color: greenyellow;
 }
 
 p {
@@ -460,11 +459,6 @@ figcaption {
   text-align: left;
 }
 
-.aboutMeImage {
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
 .aboutMeImage img {
   border: 6px solid black;
   border-radius: 25px;
@@ -563,6 +557,9 @@ figcaption {
       -ms-flex-pack: center;
           justify-content: center;
   margin: 0% 10%;
+  -webkit-column-gap: 20px;
+     -moz-column-gap: 20px;
+          column-gap: 20px;
 }
 
 .overlay {
@@ -591,24 +588,7 @@ figcaption {
   font-size: 18px;
 }
 
-.project4Container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  width: 100%;
-  padding-bottom: 5%;
-}
-.project4Container .project4React:hover .overlay {
-  height: 100%;
-}
-.project4Container .project4React {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  width: 50%;
-  position: relative;
-}
-.project4Container .projectTextContainer {
+.projectTextContainer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -624,6 +604,31 @@ figcaption {
       -ms-flex-align: center;
           align-items: center;
   text-align: center;
+}
+
+.projectTechStack {
+  color: teal;
+}
+
+.projectBtn {
+  position: relative;
+  background-color: aquamarine;
+  padding: 12px;
+  border: 2px solid black;
+}
+
+.project4Container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+}
+.project4Container .project4React:hover .overlay {
+  height: 100%;
+}
+.project4Container .project4React {
+  width: 50%;
+  position: relative;
 }
 
 .project3Container {
@@ -641,28 +646,8 @@ figcaption {
   height: 100%;
 }
 .project3Container .project3React {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   width: 50%;
   position: relative;
-}
-.project3Container .project3Text {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  width: 50%;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-flow: column wrap;
-          flex-flow: column wrap;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  text-align: center;
 }
 
 .project2Container {
@@ -676,9 +661,6 @@ figcaption {
   height: 100%;
 }
 .project2Container .project2 {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   width: 50%;
   position: relative;
 }

@@ -82,7 +82,7 @@
  
 }
 .aboutMeImage {
-    justify-content: center;
+    
     img {
         border: 6px solid black;
         border-radius: 25px;
@@ -150,6 +150,7 @@
         flex-flow: row wrap;
         justify-content: center;
         margin: 0% 10%;
+        column-gap: 20px;
        
     }
 }
@@ -180,27 +181,39 @@
     }
 }
 
+.projectTextContainer {
+    display: flex;
+    width: 50%;
+    justify-content: center;
+    flex-flow: column wrap;
+    align-items: center;
+    text-align: center;
+}
+
+.projectTechStack {
+    color: teal;
+}
+
+.projectBtn {
+    position: relative; 
+    background-color:aquamarine;
+    padding: 12px;
+    border: 2px solid black;
+}
 .project4Container {
     display: flex;
     width: 100%; 
-    padding-bottom: 5%;
+   
     .project4React:hover .overlay {
         height: 100%; 
     }
     .project4React {
-        display: flex;
         width: 50%; 
         position: relative; 
         
     }
-    .projectTextContainer {
-        display: flex;
-        width: 50%;
-        justify-content: center;
-        flex-flow: column wrap;
-        align-items: center;
-        text-align: center;
-    }
+    
+
 }
 .project3Container {
     display: flex;
@@ -212,19 +225,12 @@
 
     }
     .project3React {
-        display: flex;
+        
         width: 50%;
         position: relative; 
         
     }
-    .project3Text {
-        display: flex;
-        width: 50%;
-        justify-content: center;
-        flex-flow: column wrap;
-        align-items: center;
-        text-align: center;
-    }
+
 }
 
 .project2Container {
@@ -237,7 +243,7 @@
 
     }
     .project2 {
-        display: flex;
+        
         width: 50%;
         position: relative;
     }
