@@ -515,11 +515,11 @@ figcaption {
       -ms-flex-pack: center;
           justify-content: center;
   text-align: center;
-  width: 50%;
+  max-width: 50%;
   font-size: 2rem;
 }
 .skillList li {
-  margin: 2%;
+  margin: 3%;
 }
 
 .myProjects {
@@ -534,7 +534,7 @@ figcaption {
       -ms-flex-flow: column wrap;
           flex-flow: column wrap;
   text-align: center;
-  padding-bottom: 6%;
+  padding-bottom: 5%;
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -557,9 +557,7 @@ figcaption {
       -ms-flex-pack: center;
           justify-content: center;
   margin: 0% 10%;
-  -webkit-column-gap: 20px;
-     -moz-column-gap: 20px;
-          column-gap: 20px;
+  gap: 120px;
 }
 
 .overlay {
@@ -592,7 +590,7 @@ figcaption {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 50%;
+  width: 46%;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -622,12 +620,15 @@ figcaption {
   display: -ms-flexbox;
   display: flex;
   width: 100%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 .project4Container .project4React:hover .overlay {
   height: 100%;
 }
 .project4Container .project4React {
-  width: 50%;
+  width: 46%;
   position: relative;
 }
 
@@ -640,13 +641,15 @@ figcaption {
       -ms-flex-flow: row-reverse wrap;
           flex-flow: row-reverse wrap;
   width: 100%;
-  padding-bottom: 5%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 .project3Container .project3React:hover .overlay {
   height: 100%;
 }
 .project3Container .project3React {
-  width: 50%;
+  width: 46%;
   position: relative;
 }
 
@@ -655,20 +658,22 @@ figcaption {
   display: -ms-flexbox;
   display: flex;
   width: 100%;
-  padding-bottom: 5%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 .project2Container .project2:hover .overlay {
   height: 100%;
 }
 .project2Container .project2 {
-  width: 50%;
+  width: 46%;
   position: relative;
 }
 .project2Container .project2Text {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 50%;
+  width: 46%;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -691,7 +696,9 @@ figcaption {
       -ms-flex-flow: row-reverse wrap;
           flex-flow: row-reverse wrap;
   width: 100%;
-  padding-bottom: 5%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 .project1Container .project1:hover .overlay {
   height: 100%;
@@ -700,14 +707,14 @@ figcaption {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 50%;
+  width: 46%;
   position: relative;
 }
 .project1Container .project1Text {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 50%;
+  width: 46%;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -726,7 +733,9 @@ figcaption {
   display: -ms-flexbox;
   display: flex;
   width: 100%;
-  padding-bottom: 5%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 .assignment1Container .assignment1:hover .overlay {
   height: 100%;
@@ -735,14 +744,14 @@ figcaption {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 50%;
+  width: 46%;
   position: relative;
 }
 .assignment1Container .assignment1Text {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 50%;
+  width: 46%;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
