@@ -271,6 +271,7 @@ hr {
 h1, h2, h3, h4, h5, h6 {
   font-family: "Schibsted Grotesk", sans-serif;
   font-size: 30px;
+  color: #112A46;
 }
 
 a {
@@ -280,6 +281,7 @@ a {
 p {
   font-family: "Lora", serif;
   font-size: 22px;
+  color: #112A46;
 }
 
 figcaption {
@@ -424,6 +426,7 @@ figcaption {
   max-width: 100%;
   padding-bottom: 5%;
   margin: 0;
+  background-color: #F1E0C4;
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -474,6 +477,7 @@ figcaption {
       -ms-flex-flow: column wrap;
           flex-flow: column wrap;
   width: 50%;
+  line-height: 200%;
   font-size: 1.6rem;
 }
 
@@ -535,6 +539,7 @@ figcaption {
           flex-flow: column wrap;
   text-align: center;
   padding-bottom: 5%;
+  background-color: #F1E0C4;
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -590,7 +595,7 @@ figcaption {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 46%;
+  width: 48%;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -628,7 +633,7 @@ figcaption {
   height: 100%;
 }
 .project4Container .project4React {
-  width: 46%;
+  width: 48%;
   position: relative;
 }
 
@@ -649,7 +654,7 @@ figcaption {
   height: 100%;
 }
 .project3Container .project3React {
-  width: 46%;
+  width: 48%;
   position: relative;
 }
 
@@ -666,14 +671,14 @@ figcaption {
   height: 100%;
 }
 .project2Container .project2 {
-  width: 46%;
+  width: 48%;
   position: relative;
 }
 .project2Container .project2Text {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 46%;
+  width: 48%;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -707,14 +712,14 @@ figcaption {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 46%;
+  width: 48%;
   position: relative;
 }
 .project1Container .project1Text {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 46%;
+  width: 48%;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -744,14 +749,14 @@ figcaption {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 46%;
+  width: 48%;
   position: relative;
 }
 .assignment1Container .assignment1Text {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 46%;
+  width: 48%;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
