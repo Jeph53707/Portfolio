@@ -1,13 +1,6 @@
-const hamburgerMenu = docuent.queuerySelector (".hamburgerMenu");
-const navMenu = document.querySelector (".navMenu");
+const menu_btn = document.querySelector ('.hamburger');
 
-hamburgerMenu.addEventListener ("click", () => {
-    hamburgerMenu.classList.toggle ("active");
-    navMenu.classList.toggle ("active");
-});
+menu_btn.addEventListener ('click' = () => {
+    menu_btn.classList.toggle('isactive');
 
-document.querySelectorAll(".navLink").forEach (n => n.addEventListener ("click", () => {
-    navMenu.classList.remove ("active");
-    hamburgerMenu.classList.remove ("active");
-    
-}));
+})

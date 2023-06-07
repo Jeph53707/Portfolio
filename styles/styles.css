@@ -234,8 +234,8 @@ html {
 }
 
 * {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
 }
 
 img {
@@ -243,6 +243,7 @@ img {
   width: 100%;
   margin: 0;
   padding: 0;
+  height: auto;
 }
 
 body {
@@ -251,9 +252,14 @@ body {
   padding: 0;
 }
 
-header {
-  background-color: black;
-  margin: 0 auto;
+nav {
+  width: 100%;
+  position: fixed;
+  top: 0%;
+  z-index: 10;
+  background-color: #b0dae4;
+  background-image: -webkit-gradient(linear, left top, right top, from(#b0dae4), color-stop(50%, #AFD9C9), to(#b0dae4));
+  background-image: linear-gradient(90deg, #b0dae4 0%, #AFD9C9 50%, #b0dae4 100%);
 }
 
 ul {
@@ -303,39 +309,42 @@ p {
   color: black;
 }
 
+li {
+  list-style: none;
+}
+
 .navBar {
-  margin: 0%;
-  background: black;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  min-height: 50px;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 0 5%;
-  width: 100%;
+}
+.navBar .logo p {
+  font-size: 1.5rem;
+  font-weight: bold;
 }
 
 .navMenu {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  gap: 60px;
+  width: 100%;
 }
 
 .navLink {
   text-decoration: none;
-  color: white;
+  color: #112A46;
   -webkit-transition: 0.3s ease;
   transition: 0.3s ease;
 }
@@ -344,80 +353,107 @@ p {
   color: skyblue;
 }
 
-.hamburgerMenu {
-  display: none;
-  cursor: pointer;
+.navContact {
+  text-decoration: none;
+  color: #112A46;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+  position: relative;
+  background-color: peachpuff;
+  padding: 20px;
+  border: 2px solid black;
+  border-radius: 2rem;
 }
-.hamburgerMenu .threeBars {
+
+.hamburger {
+  position: relative;
   display: block;
-  width: 30px;
-  height: 10px;
-  margin: 10% 0;
-  -webkit-transition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out;
+  width: 35px;
+  height: 35px;
+  cursor: pointer;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  background: none;
+  outline: none;
+  border: none;
+}
+
+.hamburger .bar, .hamburger:after, .hamburger:before {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 5px;
   background-color: white;
+  margin: 6px 0px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
 }
 
-.navBar {
-  position: fixed;
-  z-index: 9999;
+.hamburger.is-active, .hamburger:before {
+  -webkit-transform: rotate(-45deg) translate(-8px, 6px);
+          transform: rotate(-45deg) translate(-8px, 6px);
 }
 
-.welcomePage {
+.hamburger.is-active, .hamburger:after {
+  -webkit-transform: rotate(45deg) translate(-9px, -8px);
+          transform: rotate(45deg) translate(-9px, -8px);
+}
+
+.hamburger.is-active .bar {
+  opacity: 0;
+}
+
+.homePage {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   height: 100vh;
-  background-repeat: no-repeat;
-  background-size: cover;
+  background-color: #b0dae4;
+  background-image: -webkit-gradient(linear, left top, right top, from(#b0dae4), color-stop(50%, #AFD9C9), to(#b0dae4));
+  background-image: linear-gradient(90deg, #b0dae4 0%, #AFD9C9 50%, #b0dae4 100%);
 }
 
-.welcomeText {
+.homePageContainer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 50%;
-  border-right: 3px solid rgb(223, 167, 100);
-  padding-right: 2%;
 }
 
-.welcomeTextAlt {
+.homeText {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  text-align: center;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-flow: column wrap;
           flex-flow: column wrap;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  width: 50%;
-  border-left: 3px solid rgb(223, 167, 100);
-  padding-left: 2%;
 }
-.welcomeTextAlt p {
-  width: 35%;
+.homeText h1 {
+  font-size: 4rem;
+}
+.homeText p {
+  line-height: 200%;
 }
 
-.textAlt {
+.homeImage {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  width: 35%;
+  max-width: 40%;
 }
-.textAlt li {
-  font-size: 2.5rem;
-  margin: 0 2%;
+.homeImage img {
+  border-radius: 60px;
 }
 
 .wrapper {
@@ -469,17 +505,11 @@ p {
 }
 
 .aboutMeImage {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  width: 40%;
 }
 .aboutMeImage img {
   border: 6px solid black;
   border-radius: 25px;
-  width: 90%;
 }
 
 .aboutMeText {
@@ -537,10 +567,12 @@ p {
   text-align: center;
   padding-top: 2.5%;
   padding-bottom: 2.5%;
-  max-width: 60%;
+  width: 60%;
   -webkit-column-gap: 100px;
      -moz-column-gap: 100px;
           column-gap: 100px;
+  border-left: 10px double skyblue;
+  border-right: 10px double skyblue;
 }
 .skillList li {
   font-size: 3.5rem;
@@ -551,9 +583,6 @@ p {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-flow: column wrap;
@@ -587,7 +616,6 @@ p {
   text-decoration: none;
   font-family: Arial, Helvetica, sans-serif;
   color: darkcyan;
-  border-radius: 2rem;
 }
 
 .overlay {
@@ -639,15 +667,6 @@ p {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-}
-
-.overlayTitle {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
 }
 
 .projectTechStack {
@@ -720,8 +739,9 @@ p {
 .projectBtn {
   position: relative;
   background-color: peachpuff;
-  padding: 14px 36px 20px 36px;
+  padding: 20px 36px 20px 36px;
   border: 2px solid black;
+  border-radius: 2rem;
 }
 
 .project4Container {
@@ -882,17 +902,18 @@ p {
   background-color: #F1E0C4;
   gap: 60px;
 }
-.contactMe .formWrapper {
-  margin: 0% 18%;
-}
-.contactMe .formTitle {
+.contactMe h2 {
   font-size: 1.6rem;
   text-align: center;
   width: 100%;
 }
-.contactMe .formTitle h2 span {
+.contactMe h2 span {
   font-size: 2rem;
   border-bottom: 4px solid skyblue;
+}
+.contactMe .formWrapper {
+  width: 80%;
+  margin: 0 auto;
 }
 .contactMe .contactFormContainer {
   display: -webkit-box;
@@ -922,14 +943,15 @@ p {
   margin-bottom: 5%;
   border: 2px solid black;
   border-radius: 6px;
+  padding: 20px;
 }
 .contactMe .contactFormContainer .contactForm textarea {
   margin-bottom: 5%;
   resize: none;
   border: 2px solid black;
   border-radius: 6px;
-  width: 100%;
   height: 10rem;
+  padding: 20px;
 }
 .contactMe .contactFormContainer .contactFormInput {
   display: -webkit-box;
@@ -944,7 +966,8 @@ p {
 .contactMe .contactFormContainer .contactFormInput button {
   background-color: white;
   border-radius: 6px;
-  border: 2px solid skyblue;
+  border: 2px solid black;
+  padding: 20px;
 }
 
 footer {
@@ -955,12 +978,17 @@ footer {
       -ms-flex-pack: center;
           justify-content: center;
   color: white;
-  background-color: black;
+  background-color: #545454;
 }
 
-@media (max-width: 321px) {
-  .welcomePage {
-    font-size: 0.5rem;
+@media (max-width: 400px) {
+  nav {
+    display: none;
+  }
+  .homePage {
+    min-height: unset;
+  }
+  .homePageContainer {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -968,79 +996,50 @@ footer {
     -webkit-box-direction: normal;
         -ms-flex-flow: column wrap;
             flex-flow: column wrap;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    background-position: center center;
   }
-  .welcomePage .welcomeText h1 {
-    font-size: 1.5rem;
+  .homeText {
+    text-align: center;
   }
-  .welcomePage .welcomeTextAlt .textAlt {
-    width: 100%;
-    font-size: 0.5rem;
+  .homeText h1 {
+    font-size: 2.5rem;
   }
-  .welcomePage .welcomeTextAlt .textAlt .li {
-    font-size: 0.5rem;
-    margin: 0 2%;
+  .homeText h2 {
+    font-size: 2rem;
   }
-  .welcomePage .welcomeTextAlt p {
-    width: 100%;
-    margin: 0;
-    font-size: 1rem;
+  .homeImage {
+    max-width: 75%;
   }
-  .aboutMe {
-    background-position: center center;
-  }
-  .aboutMe .aboutMeText {
-    width: 100%;
-  }
-  .aboutMe .aboutMeText p {
-    font-size: 1rem;
+  .aboutMeImage {
+    width: 75%;
   }
   .skillList {
+    border-left: hidden;
+    border-right: hidden;
     width: 100%;
   }
-  .myProjects .projectsContainer {
+  .skillList li {
+    font-size: 2.5rem;
+    width: 20%;
+  }
+  .skillList p {
+    font-size: 18px;
+  }
+  .myProjects .projectTextContainer {
+    width: 100%;
+  }
+  .myProjects .projectBtn {
+    padding: 20px;
+  }
+  .myProjects .project4Container {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-flow: column wrap;
-            flex-flow: column wrap;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
-  .myProjects .projectsContainer .project2 {
-    width: 90%;
-    margin-bottom: 2%;
-  }
-  .myProjects .projectsContainer .project2Text {
-    width: 90%;
-  }
-  .myProjects .projectsContainer .project1 {
-    width: 90%;
-    margin-bottom: 2%;
-  }
-  .myProjects .projectsContainer .assignment1 {
-    width: 90%;
-    margin-bottom: 2%;
-  }
-  .myProjects .projectsContainer .project3 {
-    width: 90%;
-  }
-  .contactForm .formContainer {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-flow: column wrap;
@@ -1049,83 +1048,13 @@ footer {
         -ms-flex-pack: center;
             justify-content: center;
   }
-  .contactForm .formContainer .formMessage {
-    width: 90%;
-    padding-bottom: 5%;
-  }
-  .contactForm .formContainer .formInfo {
+  .myProjects .project4Container .project4React {
     width: 100%;
   }
-  .contactForm .formContainer form {
-    width: 95%;
-  }
-}
-@media (max-width: 480px) {
-  .welcomeText h1 {
-    font-size: 1.5rem;
-  }
-  .welcomeTextAlt .textAlt {
-    width: 100%;
-    font-size: 0.5rem;
-  }
-  .welcomeTextAlt .textAlt .li {
-    font-size: 0.5rem;
-    margin: 0 2%;
-  }
-  .welcomeTextAlt p {
-    width: 100%;
-    margin: 0;
-    font-size: 1rem;
-  }
-  .aboutMe {
-    background-position: center center;
-  }
-  .aboutMe .aboutMeText {
-    width: 100%;
-  }
-  .aboutMe .aboutMeText p {
-    font-size: 1rem;
-  }
-  .skillList {
-    width: 100%;
-  }
-  .myProjects .projectsContainer {
+  .myProjects .project3Container {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-flow: column wrap;
-            flex-flow: column wrap;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
-  .myProjects .projectsContainer .project2 {
-    width: 90%;
-    margin-bottom: 2%;
-  }
-  .myProjects .projectsContainer .project2Text {
-    width: 90%;
-  }
-  .myProjects .projectsContainer .project1 {
-    width: 90%;
-    margin-bottom: 2%;
-  }
-  .myProjects .projectsContainer .assignment1 {
-    width: 90%;
-    margin-bottom: 2%;
-  }
-  .myProjects .projectsContainer .project3 {
-    width: 90%;
-  }
-  .contactForm .formContainer {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-flow: column wrap;
@@ -1134,109 +1063,67 @@ footer {
         -ms-flex-pack: center;
             justify-content: center;
   }
-  .contactForm .formContainer .formMessage {
-    width: 90%;
-    padding-bottom: 5%;
-  }
-  .contactForm .formContainer .formInfo {
+  .myProjects .project3Container .project3React {
     width: 100%;
   }
-  .contactForm .formContainer form {
-    width: 95%;
+  .myProjects .project2Container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column wrap;
+            flex-flow: column wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
-}
-@media (max-width: 720px) {
-  .navBar {
-    position: fixed;
+  .myProjects .project2Container .project2 {
     width: 100%;
-    -webkit-transition: 0.5s;
-    transition: 0.5s;
   }
-  .navMenu {
+  .myProjects .project1Container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column wrap;
+            flex-flow: column wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .myProjects .project1Container .project1 {
+    width: 100%;
+  }
+  .myProjects .contactMe .contactFormContainer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column wrap;
+            flex-flow: column wrap;
+  }
+  .myProjects .contactMe .contactFormContainer .contactFormText {
     width: 100%;
     text-align: center;
-    -webkit-transition: 0.5s;
-    transition: 0.5s;
   }
-  .welcomePage {
-    font-size: 1rem;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-flow: column wrap;
-            flex-flow: column wrap;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    background-position: center center;
-  }
-  .welcomeText h1 {
-    font-size: 1.5rem;
-  }
-  .welcomeTextAlt .textAlt {
-    width: 100%;
-    font-size: 0.5rem;
-  }
-  .welcomeTextAlt .textAlt .li {
-    font-size: 0.5rem;
-    margin: 0 2%;
-  }
-  .welcomeTextAlt p {
-    width: 100%;
-    margin: 0;
-    font-size: 1rem;
-  }
-  .aboutMe {
-    background-position: center center;
-  }
-  .aboutMe .aboutMeText {
+  .myProjects .contactMe .contactFormContainer .contactForm {
     width: 100%;
   }
-  .aboutMe .aboutMeText p {
-    font-size: 1rem;
-  }
-  .skillList {
-    width: 100%;
-  }
-  .myProjects .projectsContainer {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-flow: column wrap;
-            flex-flow: column wrap;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
-  .myProjects .projectsContainer .project2 {
-    width: 90%;
-    margin-bottom: 2%;
-  }
-  .myProjects .projectsContainer .project2Text {
-    width: 90%;
-  }
-  .myProjects .projectsContainer .project1 {
-    width: 90%;
-    margin-bottom: 2%;
-  }
-  .myProjects .projectsContainer .assignment1 {
-    width: 90%;
-    margin-bottom: 2%;
-  }
-  .myProjects .projectsContainer .project3 {
-    width: 90%;
+  .myProjects footer h6 {
+    font-size: 22px;
   }
 }
-@media (max-width: 1060px) {
-  .welcomePage {
-    font-size: 1rem;
+@media (max-width: 600px) {
+  nav {
+    display: none;
+  }
+  .homePage {
+    min-height: unset;
+  }
+  .homePageContainer {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1244,34 +1131,246 @@ footer {
     -webkit-box-direction: normal;
         -ms-flex-flow: column wrap;
             flex-flow: column wrap;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+  }
+  .homeText {
+    text-align: center;
+  }
+  .homeText h1 {
+    font-size: 2.5rem;
+  }
+  .homeText h2 {
+    font-size: 2rem;
+  }
+  .aboutMeText {
+    width: 100%;
+    text-align: center;
+  }
+  .aboutMeText p {
+    font-size: 16px;
+  }
+  .aboutMeImage {
+    width: 75%;
+  }
+  .skillList {
+    border-left: hidden;
+    border-right: hidden;
+    width: 100%;
+  }
+  .skillList li {
+    font-size: 2.5rem;
+    width: 20%;
+  }
+  .skillList p {
+    font-size: 18px;
+  }
+  .myProjects .projectTextContainer {
+    width: 100%;
+  }
+  .myProjects .projectBtn {
+    padding: 20px;
+  }
+  .myProjects .project4Container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column wrap;
+            flex-flow: column wrap;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    background-position: center center;
   }
-  .welcomeTextAlt .textAlt {
+  .myProjects .project4Container .project4React {
     width: 100%;
   }
-  .welcomeTextAlt .textAlt .li {
-    font-size: 1rem;
-    margin: 0 2%;
+  .myProjects .project3Container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column wrap;
+            flex-flow: column wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
-  .welcomeTextAlt p {
+  .myProjects .project3Container .project3React {
     width: 100%;
   }
-  .aboutMe {
-    background-position: center center;
+  .myProjects .project2Container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column wrap;
+            flex-flow: column wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
-  .aboutMe .aboutMeText {
+  .myProjects .project2Container .project2 {
     width: 100%;
   }
-  .aboutMe .aboutMeText p {
-    font-size: 1rem;
+  .myProjects .project1Container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column wrap;
+            flex-flow: column wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
-  .skillList {
+  .myProjects .project1Container .project1 {
     width: 100%;
+  }
+  .contactMe .contactFormContainer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column wrap;
+            flex-flow: column wrap;
+  }
+  .contactMe .contactFormContainer .contactFormText {
+    width: 100%;
+    text-align: center;
+  }
+  .contactMe .contactFormContainer .contactForm {
+    width: 100%;
+  }
+  footer h6 {
+    font-size: 22px;
+  }
+}
+@media (max-width: 800px) {
+  .homePage {
+    min-height: unset;
+  }
+  .homeImage {
+    max-width: 80%;
+  }
+  .aboutMeContainer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column wrap;
+            flex-flow: column wrap;
+  }
+  .aboutMeContainer .aboutMeText {
+    text-align: center;
+    width: 100%;
+  }
+  .aboutMeContainer .aboutMeImage {
+    width: 75%;
+  }
+  .mySkills .skillList {
+    border-left: hidden;
+    border-right: hidden;
+  }
+  .myProjects .projectTextContainer {
+    width: 100%;
+  }
+  .myProjects .projectBtn {
+    padding: 20px;
+  }
+  .myProjects .project4Container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column wrap;
+            flex-flow: column wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .myProjects .project4Container .project4React {
+    width: 100%;
+  }
+  .myProjects .project3Container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column wrap;
+            flex-flow: column wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .myProjects .project3Container .project3React {
+    width: 100%;
+  }
+  .myProjects .project2Container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column wrap;
+            flex-flow: column wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .myProjects .project2Container .project2 {
+    width: 100%;
+  }
+  .myProjects .project1Container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column wrap;
+            flex-flow: column wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .myProjects .project1Container .project1 {
+    width: 100%;
+  }
+}
+@media (max-width: 1199px) {
+  .homePage {
+    min-height: unset;
+  }
+  .aboutMeContainer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column wrap;
+            flex-flow: column wrap;
+  }
+  .aboutMeContainer .aboutMeText {
+    text-align: center;
+    width: 100%;
+  }
+  .aboutMeContainer .aboutMeImage {
+    width: 50%;
+    min-width: 200px;
+  }
+  .mySkills .skillList {
+    width: 85%;
   }
 }

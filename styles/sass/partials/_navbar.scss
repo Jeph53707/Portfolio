@@ -1,0 +1,41 @@
+.navBar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .logo p {
+        font-size: 1.5rem;
+        font-weight: bold;
+    }
+}
+
+.navMenu {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+
+}
+
+.navLink {
+    text-decoration: none;
+    color: #112A46;
+    transition: 0.3s ease;
+    
+}
+.navLink:hover {
+    color: skyblue
+}
+
+.navContact {
+    text-decoration: none;
+    color: #112A46;
+    transition: 0.3s ease;
+    position: relative; 
+    background-color:peachpuff;
+    padding: 20px;
+    border: 2px solid black;
+    border-radius: 2rem;
+}
+
+
+

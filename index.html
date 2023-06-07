@@ -13,38 +13,50 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Schibsted+Grotesk:wght@800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
-
-    <title>Jeff's Portfolio</title>
+    <link rel="icon" type="image/x-icon" href="./assets/favicon.ico">
+    <title>Jeff Chen</title>
 </head>
 <body>
-    <header>
-        <nav class="navBar">
+    <nav>
+        <div class="navBar wrapper">
+            <div class="logo">
+                <p>JC</p>
+            </div>
             <ul class="navMenu">
                 <li class="navItem">
-                    <a href="#home" class="navLink">| Home |</a>
+                    <a href="#home" class="navLink">Home</a>
                 </li>
                 <li class="navItem">
-                    <a href="#aboutMe" class="navLink">| About |</a>
+                    <a href="#aboutMe" class="navLink">About</a>
                 </li>
                 <li class="navItem">
-                    <a href="#myProjects" class="navLink">| Projects |</a>
+                    <a href="#mySkills" class="navLink">Skills</a>
                 </li>
                 <li class="navItem">
-                    <a href="#contactMe" class="navLink">| Talk 2 Me |</a>
+                    <a href="#myProjects" class="navLink">Projects</a>
+                </li>
+                <li class="navContact">
+                    <a href="#contactMe" class="navLink">Talk 2 Me</a>
                 </li>
             </ul>
-            <div class="hamburgerMenu">
-                <span class="threeBars"></span>
-                <span class="threeBars"></span>
-                <span class="threeBars"></span>
-            </div>
-        </nav>
+            <button class="hamburger">
+                <div class="bar"></div>
+            </button>
+        </div>
+    </nav>
     
-    </header>
     <main>
-        
        <section class="homePage" id="home">
-            <h1>Jeff</h1>
+            <div class="homePageContainer wrapper">
+                <div class="homeText">
+                    <h1>Jeff Chen</h1>
+                    <h2> Front-End Developer</h2>
+                </div>
+                <figure class="homeImage">
+                    <img src="./assets/JeffChenHeadshot 2023PS.png" alt="picture of Jeff upperbody transparent background">
+                </figure>
+            </div>
+            
       
        </section>
       
@@ -58,14 +70,14 @@
 
                 <div class="aboutMeText">
                     <p>Greetings! My name is Jeff (I hope you got the reference). I'm a Front End Developer based in Toronto. I enjoy designing creative, accessible, and user-friendly websites. </p>
-                    <p>Prior to becoming a Front-End Developer, I was a Talent Acquisition Consultant for IntelliPro Group Inc, a staffing agency headquarted in the United States that specialized in Technical (Permanent and Contract) Recruitment.</p>
-                    <p>Outside of coding, I enjoy exploring restaurants (I know the BEST diners), and playing RimWorld.</p>
+                    <p>Prior to becoming a Front-End Developer, I was a Talent Acquisition Consultant for a staffing agency headquarted in the United States that specialized in Technical (Permanent and Contract) Recruitment.</p>
+                    <p>Outside of coding, I enjoy exploring restaurants (I know the BEST diners) and Jazz.</p>
                     
                 </div>
             </div>
        </section>
 
-       <section class="mySkills">
+       <section class="mySkills" id="mySkills">
            <h2><span>Tech Stack</span></h2>
             
             <ul class="skillList">
@@ -97,11 +109,10 @@
        </section>
 
        <section class="myProjects" id="myProjects">
-            <h2><span>Projects</span>
+            <h2><span>Projects</span></h2>
             <p>Hover over to learn more</p>
             
             <div class="projectsContainer wrapper">
-                
                 <div class="project4Container">
                     <figure class="project4React">
                         <img src="./assets/psproject-4-podcast-prioritizer-mockup.png" alt="screenshot of React Project 4">
@@ -114,7 +125,7 @@
                                 <li><i class="fa-brands fa-react"></i><p>React</p></li>
                                 
                             </ul>
-                            <h4>Me | AP | GW | DN </h4>
+                            <h4>Me | Adrien Polselli | Galen White | Derek Ngan </h4>
                            
                            
 
@@ -139,6 +150,7 @@
                                 <li><i class="fa-brands fa-html5"></i><p>HTML5</p></li>
                                 <li><i class="fa-brands fa-sass"></i><p>SASS</p></li>
                                 <li><i class="fa-brands fa-square-js"></i><p>JavaScript</p></li>
+                                <li><i class="fa-brands fa-react"></i><p>React</p></li>
                             </ul>
                             <h4>Just Me :D</h4>
                         </div>
@@ -163,14 +175,15 @@
                         <img src="./assets/psproject-2-javascript-mockup.png" alt="screenshot of JavaScript Project 2">
                         
                         <div class="overlay">
-            
+                            <h4>Made With & By</h4>
                             <ul class="projectTechStack">
-                                <h4>Made With & By</h4>
+                    
                                 <li><i class="fa-brands fa-html5"></i><p>HTML5</p></li>
                                 <li><i class="fa-brands fa-sass"></i><p>SASS</p></li>
                                 <li><i class="fa-brands fa-square-js"></i><p>JavaScript</p></li>
-                                <h4>Solivan Lau | Derek Ngan</h4>
+                                
                             </ul>
+                            <h4>Solivan Lau | Derek Ngan</h4>
                            
                      
                         </div>
@@ -191,57 +204,35 @@
                     <div class="project1">
                         <figure>
                             <img src="./assets/psproject-1-delicious-mockup.png" alt="screenshot of the index of a multipage PSD conversion">
-                            <!-- <figcaption>Last Updated: April 2023</figcaption> -->
                         </figure>
                         
                         <div class="overlay">
+                            <h4>Made With & By</h4>
                             <ul class="projectCredits">
-                                <h4>Made With & By</h4>
                                 <li><i class="fa-brands fa-html5"></i><p>HTML5</p></li>
                                 <li><i class="fa-brands fa-sass"></i><p>SASS</p></li>
                                 <li><i class="fa-brands fa-square-js"></i><p>JavaScript</p></li>
-                                <h4>Just Me :D</h4>
                             </ul>
+                            <h4>Just Me :D</h4>
                         </div>
                
                     </div>
                     <div class="projectTextContainer">
                         <h3>The Delicious</h3>
-                
                         <p>A fully responsive multi-page PSD conversion for a potential restaurant.</p>
                         <div class="projectBtnContainer">
-                            <a class="projectBtn" target="_blank" href="https://jeffdevproject1.netlify.app" aria-label="link to live site">Live</a>
-                            <a class="projectBtn" target="_blank" href="https://github.com/DerekNgan/Project-2" aria-label="link to Github Repository">Repo</a>
+                            <a class="projectBtn" target="_blank" href="https://jeffdevproject1.netlify.app" aria-label="link to live site">View Live</a>
+                            <a class="projectBtn" target="_blank" href="https://github.com/DerekNgan/Project-2" aria-label="link to Github Repository">View Repo</a>
                         </div>
-                        
                     </div>
-
                 </div>
-                
-                <!-- <div class="assignment1Container">
-                    <div class="assignment1">
-                        <figure>
-                            <img src="./assets/Bikerland.png" alt="screenshot of the index of a single page PSD conversion">
-                        </figure>
-                        <div class="overlay">
-                            <h3>Bikerland</h3>
-                            <p>A single page PSD conversion</p>
-                        </div>
-                    </div>
-                    <div class="projectTextContainer">
-                        <h3>Bikerland</h3>
-                        <span class="projectTechStack"><p><strong>
-                            HTML | CSS 
-                        </strong></p></span>
-                    </div>
-                </div> -->
             </div>
        </section>
 
        <section class="contactMe" id="contactMe">
-            <div class="formTitle">
-                <h2><span>Let's Talk!</span></h2>
-            </div>
+    
+            <h2><span>Let's Talk!</span></h2>
+    
             <div class="contactFormContainer formWrapper">
                 
                 <div class="contactFormText">
