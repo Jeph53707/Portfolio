@@ -96,7 +96,7 @@
     padding-bottom: 2.5%;
     
     h2 span {
-        font-size: 2rem;
+        font-size: 2.5rem;
         border-bottom: 4px solid skyblue;
         text-align: center;
         
@@ -144,7 +144,7 @@
     background-color: #FFFDE7;
 
     h2 span {
-        font-size: 2rem;
+        font-size: 2.5rem;
         border-bottom: 4px solid skyblue;
     }
 }
@@ -181,7 +181,7 @@
     background-size: cover;
 
     h2 span {
-        font-size: 2rem;
+        font-size: 2.5rem;
         border-bottom: 4px solid skyblue;
     }
     
@@ -402,7 +402,7 @@
         width: 100%;
     }
     h2 span{
-        font-size: 2rem;
+        font-size: 2.5rem;
         border-bottom: 4px solid skyblue;
     }
     .formWrapper {
@@ -420,6 +420,19 @@
         text-align: left;
             p {
                 margin: 0;
+            }
+            .contactOptions {
+                display: flex; 
+                flex-flow: column wrap;
+                gap: 30px;
+                li {
+                    font-size: 3.5rem;
+                }
+                a {
+                    font-size: 2.15rem;
+                    text-decoration: none;
+                    color: rgb(56, 118, 189);
+                }
             }
     
        }
